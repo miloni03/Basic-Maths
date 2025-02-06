@@ -1,0 +1,14 @@
+int countDigits(int n){
+	// Write your code here.	
+	int temp=0;
+	while(n>0)
+	{
+		int reminder=n%10;
+		temp=temp+1;
+		n=n/10;
+	}
+	return temp;
+}
+
+Input:N = 12345
+Output:5
