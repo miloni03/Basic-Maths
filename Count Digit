@@ -10,5 +10,6 @@ int countDigits(int n){
 	return temp;
 }
 
-Input:N = 12345
+Input:
+N = 12345
 Output:5
