@@ -1,0 +1,33 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        
+        int temp=x;
+        int rev=0;
+        while(x!=0)
+        {
+            int rem=x%10;
+            x=x/10;
+            rev=rev*10+rem;
+
+        }
+        if(temp!=rev || temp<0) 
+        {
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+};
+
+Example 1:
+
+Input: x = 121
+Output: true
+
+
+Example 2:
+
+Input: x = -121
+Output: false
