@@ -1,0 +1,43 @@
+bool checkArmstrong(int n){
+	//Write your code here
+	int copy=n;
+	int copy2=n;
+	int sum=0;
+	int count=0;
+	
+	while(n>0)
+	{
+		int rem=n%10;
+		count+=1;
+		n=n/10;
+
+	}
+	while(copy>0)
+	{
+		int rem=copy%10;
+		sum=sum+pow(rem,count);
+		copy=copy/10;
+
+	}
+
+	if(copy2==sum)
+	{
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+Sample Input 1 :
+1
+
+Sample Output 1 :
+true
+
+Sample Input 3 :
+1634
+
+Sample Output 3 :
+true
+
